@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS (optional) -->
+    <style>
+        /* Add custom styles here if needed */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper blue darken-4">
+            <a href="#" class="brand-logo center">User Profile</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <!-- Side Navigation -->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="background.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="user.jpg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">john.doe@example.com</span></a>
+            </div>
+        </li>
+        <li><a href="#documents"><i class="material-icons">description</i>Documents</a></li>
+        <li><a href="#applied-jobs"><i class="material-icons">work</i>Applied Jobs</a></li>
+        <li><a href="#results"><i class="material-icons">assessment</i>Results</a></li>
+        <li><a href="#upcoming-exams"><i class="material-icons">event</i>Upcoming Exams</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <!-- User Profile Information -->
+                        <div id="user-profile">
+                            <div class="row">
+                                <div class="col s12 m3">
+                                    <img src="user.jpg" alt="User Avatar" class="circle responsive-img">
+                                </div>
+                                <div class="col s12 m9">
+                                    <h4>John Doe</h4>
+                                    <p>Email: john.doe@example.com</p>
+                                    <p>Student ID: S12345</p>
+                                    <p>Batch: 2023</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Documents Uploaded -->
+                        <div id="documents" class="section">
+                            <h5>Documents Uploaded</h5>
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle green">insert_drive_file</i>
+                                    <span class="title">Resume.pdf</span>
+                                    <p>Description: Resume for job applications</p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">edit</i></a>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">insert_drive_file</i>
+                                    <span class="title">CoverLetter.docx</span>
+                                    <p>Description: Cover letter for internship</p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">edit</i></a>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
+                                </li>
+                                <!-- Add more documents as needed -->
+                            </ul>
+                        </div>
+
+                        <!-- Applied Jobs -->
+                        <div id="applied-jobs" class="section">
+                            <h5>Applied Jobs</h5>
+                            <ul class="collection">
+                                <li class="collection-item">Software Engineer at ABC Inc.</li>
+                                <li class="collection-item">Marketing Intern at XYZ Corp.</li>
+                                <!-- Add more applied jobs as needed -->
+                            </ul>
+                        </div>
+
+                        <!-- Results -->
+                        <div id="results" class="section">
+                            <h5>Results</h5>
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle green">assignment_turned_in</i>
+                                    <span class="title">Mathematics Exam</span>
+                                    <p>Score: 95%</p>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">assignment_turned_in</i>
+                                    <span class="title">Physics Exam</span>
+                                    <p>Score: 88%</p>
+                                </li>
+                                <!-- Add more results as needed -->
+                            </ul>
+                        </div>
+
+                        <!-- Upcoming Exams -->
+                        <div id="upcoming-exams" class="section">
+                            <h5>Upcoming Exams</h5>
+                            <ul class="collection">
+                                <li class="collection-item">Chemistry Exam - July 15, 2024</li>
+                                <li class="collection-item">English Literature Exam - August 5, 2024</li>
+                                <!-- Add more upcoming exams as needed -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Initialize Materialize Components -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Materialize components
+            M.AutoInit();
+
+            // Initialize SideNav
+            const sideNav = document.querySelector('.sidenav');
+            M.Sidenav.init(sideNav);
+        });
+    </script>
+</body>
+</html>

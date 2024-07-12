@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Simplifying Form-Filling for Students and Professionals.">
+  <meta name="author" content="Harinandan Shukla">
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="DASH"> <!-- website name -->
+  <meta property="og:site" content="https://yourwebsite.com"> <!-- website link -->
+  <meta property="og:title" content="DASH - Document Automation & Streamlined Handling"> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="Simplifying Form-Filling for Students and Professionals."> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="img/logo/logo.png"> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="https://yourwebsite.com"> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="website">
+  <title>DASH</title>
+
+  <link rel="icon" href="img/logo/logo.jpeg">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+  
+</head>
+<body>
+  <nav class="green lighten-5" role="navigation">
+    <div class="nav-wrapper container" >
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="img/logo/logo.png" alt="Logo" style="height: 50px;"></a>
+      </div>
+      </nav>
+
+
+        <!-- Login Container -->
+  <div class="login-container green lighten-5">
+    <!-- Login Card -->
+    <div class="login-card">
+      <h5>
+        <i class="material-icons">login</i> Sign in
+      </h5>
+      <p>Stay updated on your professional world</p>
+      <div class="input-field">
+        <input id="email_phone" type="text" class="validate">
+        <label for="email_phone">Email or Phone</label>
+      </div>
+      <div class="input-field">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+        <div class="show-password">
+          <label for="show-password" onclick="togglePassword()">show</label>
+        </div>
+      </div>
+      <a href="#" class="forgot-password">Forgot password?</a>
+      <button class="btn waves-effect waves-light  btn-large btn-custom" type="submit" name="action">Continue</button>
+      <div class="divider"></div>
+      <p class="agreement">By clicking Continue, you agree to Dash’s <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookie Policy</a>.</p>
+      <a href="#" class="join-now">New to Dash? Join now</a>
+    </div>
+  </div>
+
+  <!-- Import Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    function togglePassword() {
+      var passwordField = document.getElementById("password");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+      } else {
+        passwordField.type = "password";
+      }
+    }
+  </script>
+    <!-- Login Footer Section -->
+    <footer class="login-footer">
+      <div class="container">
+      
+        <div class="footer-links">
+          <p>DASH © 2024</p>
+          <a href="#">User Agreement</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Community Guidelines</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Copyright Policy</a>
+          <a href="#">Send Feedback</a>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

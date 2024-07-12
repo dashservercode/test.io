@@ -1,0 +1,148 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    
+  }
+  .login-card {
+    background-color: rgb(247, 247, 255);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 5px 4px 4px 0 rgba(61, 173, 70, 0.5);
+    
+    max-width: 400px;
+    width: 100%;
+  }
+  .login-card h5 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #FF1D00;
+  }
+  .login-card p {
+    margin-bottom:  40px;
+    color: #000000;
+    font-weight: bold;
+  }
+  .login-card .input-field {
+    margin-bottom: 20px;
+  }
+  .login-card .input-field label {
+    color: black;
+  }
+  .login-card .input-field input {
+    border-bottom: 1px solid #FF1D00;
+  }
+  .login-card .input-field input:focus + label,
+  .login-card .input-field input:focus {
+    color: black !important;
+    border-bottom: 1px solid black!important;
+    box-shadow: none;
+  }
+  .login-card .show-password {
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  .login-card .show-password label {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    cursor: pointer;
+    color: #FF1D00;
+    font-size: medium;
+  }
+  .login-card .forgot-password {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff1d00;
+    text-align: right;
+
+  }
+  .login-card .forgot-password:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  .login-card .divider {
+    margin: 30px 0;
+  }
+  .login-card .agreement {
+    font-size: 0.8rem;
+    color: grey;
+    margin-top: 20px;
+  }
+  .login-card .agreement a {
+    color: #ff1d00;
+    text-decoration: none;
+  }
+  .login-card .agreement a:hover {
+    text-decoration: underline;
+     color: black;
+  }
+  .login-card .join-now {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff1d00;
+    font-weight: 500;
+  }
+
+
+
+
+  .login-card .join-now:hover {
+    text-decoration: underline;
+     color: black;
+  }
+
+  .btn-large{
+    background-color: transparent;
+    color: #af0505;
+    padding: 0 2rem;
+    box-shadow: none;
+    border: 2px solid #FF1D00;
+    border-radius: 20px;
+  }
+  .btn-large:hover
+  {
+    color: black;
+    background-color: transparent;
+       border: 2px solid black;
+  }
+  
+  .login-footer {
+    background: rgb(247, 247, 255);
+    padding: 20px 0;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+  }
+  .login-footer p {
+    margin: 5px 0;
+  }
+  .login-footer a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: medium;
+    transition: color 0.3s ease;
+  }
+  .login-footer a:hover {
+  
+    text-decoration: underline;
+    color: #FF1D00;
+  }
+  .login-footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
