@@ -90,6 +90,7 @@
     border-bottom: 1px solid blue;
     box-shadow: none;
     background: transparent;
+    font-weight: 300;
 
 }
 
@@ -101,8 +102,8 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #4c5f94;
+    font-weight: 300;
+    color: #0c45e4;
 }
 
 /* Align items center in job-details */
@@ -164,14 +165,24 @@
     .job-list li::before {
         left: -15px; /* Adjust for smaller screens */
     }
+    .card-title a {
+        color: rgb(22, 21, 21);
+        text-decoration: none;
+        font-size: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+    
+    }
 }
 
 /* Materialize specific styles */
 .card-title a {
-    color: black;
+    color: rgb(22, 21, 21);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
 }
 
 .material-icons {
