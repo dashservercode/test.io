@@ -505,7 +505,7 @@ a:hover .material-icons {
   overflow: hidden;
 }
 
-
+/* 
 .section-job {
   padding: 60px 0;
   background-color: #ffe5e5;
@@ -538,7 +538,7 @@ a:hover .material-icons {
 .job-content .icon-content i {
   font-size: 6rem;
   color: #af0505;
-}
+} */
 .btn-large{
   background-color: transparent;
   color: #af0505;

@@ -1,0 +1,74 @@
+.sectionfilter
+{ height: auto;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+  .filter-section {
+    padding: 20px;
+
+    border-radius: 16px;
+
+  }
+  .filter-section h5 {
+    color: #1976d2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .input-field .prefix {
+    color: #1976d2;
+  }
+  .input-field input[type="text"]:focus:not([readonly]) + label {
+    color: #1976d2;
+  }
+  .input-field input[type="text"]:focus:not([readonly]) {
+    border-bottom: 2px solid #1976d2;
+    box-shadow: none;
+  }
+  .input-field .select-wrapper input.select-dropdown {
+    color: #424242;
+  }
+  .input-field .dropdown-content li>a, .input-field .dropdown-content li>span {
+    color: #1976d2 !important;
+  }
+  .input-field .dropdown-content li.active>span {
+    background-color: #bbdefb !important;
+  }
+  .row .col {
+    padding: 0 10px;
+  }
+  .input-field .dropdown-content {
+    background-color: #f3f4f6;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  .input-field .dropdown-content li:hover, .input-field .dropdown-content li.active {
+    background-color: #e3f2fd !important;
+  }
+  .input-field .select-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  @media (max-width: 768px) {
+    .filter-section {
+      padding: 15px;
+    }
+    .filter-section h5 {
+      font-size: 1.5em;
+    }
+    .input-field label {
+      font-size: 0.9em;
+    }
+    .input-field input {
+      font-size: 0.9em;
+    }
+    .input-field .select-wrapper {
+      padding: 5px;
+    }
+  }
+
+  .job-section-post
+  {
+    background-color: #1976d2;
+  }
